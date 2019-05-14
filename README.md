@@ -38,7 +38,7 @@
 
 1. 数组
   - [为什么很多编程语言中数组都从0开始编号？](https://github.com/sunbigshan/learnAlgorithm/issues/4)
-  - [JavaScriptz中的数组](https://github.com/sunbigshan/learnAlgorithm/blob/master/javascript/array/Array.md)
+  - [JavaScript中的数组](https://github.com/sunbigshan/learnAlgorithm/blob/master/javascript/array/Array.md)
 2. 链表
 3. 栈
 4. 队列
