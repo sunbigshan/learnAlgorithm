@@ -37,6 +37,8 @@
 **10个数据结构**：
 
 1. 数组
+  - [为什么很多编程语言中数组都从0开始编号？](https://github.com/sunbigshan/learnAlgorithm/issues/4)
+  - [JavaScriptz中的数组]()
 2. 链表
 3. 栈
 4. 队列
