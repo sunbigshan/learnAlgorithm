@@ -40,6 +40,8 @@
   - [为什么很多编程语言中数组都从0开始编号？](https://github.com/sunbigshan/learnAlgorithm/issues/4)
   - [JavaScript中的数组](https://github.com/sunbigshan/learnAlgorithm/blob/master/javascript/array/Array.md)
 2. 链表
+  - [如何实现LRU缓存淘汰算法?](https://github.com/sunbigshan/learnAlgorithm/issues/4)
+  - [用JavaScript实现单链表](https://github.com/sunbigshan/learnAlgorithm/blob/master/javascript/array/Array.md)
 3. 栈
 4. 队列
 5. 散列表
