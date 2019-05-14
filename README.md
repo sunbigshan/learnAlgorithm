@@ -31,6 +31,8 @@
 
 1. 大O复杂度表示法
   - [复杂度分析（上）](https://github.com/sunbigshan/learnAlgorithm/issues/1)
+  - [复杂度分析（中）](https://github.com/sunbigshan/learnAlgorithm/issues/2)
+  - [复杂度分析（下）](https://github.com/sunbigshan/learnAlgorithm/issues/3)
 
 **10个数据结构**：
 
