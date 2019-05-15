@@ -44,10 +44,9 @@
   - [用JavaScript实现单链表（上）](https://github.com/sunbigshan/learnAlgorithm/blob/master/linkedlist/SinglyLinkedList.js)
   - [用JavaScript实现单链表（下）](https://github.com/sunbigshan/learnAlgorithm/blob/master/linkedlist/LinkedListAlgo.js)
 3. 栈
-  - [什么是栈？](https://github.com/sunbigshan/learnAlgorithm/issues/6)
+  - [如何实现浏览器的前进和后退功能？](https://github.com/sunbigshan/learnAlgorithm/issues/6)
   - [基于数组实现栈](https://github.com/sunbigshan/learnAlgorithm/blob/master/stack/StackBasedOnArray.js)
   - [基于链表实现栈](https://github.com/sunbigshan/learnAlgorithm/blob/master/stack/StackBasedOnLinkedList.js)
-  - [如何实现浏览器的前进和后退功能？](https://github.com/sunbigshan/learnAlgorithm/blob/master/stack/SampleBrower.js)
 4. 队列
 5. 散列表
 6. 二叉树
