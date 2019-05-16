@@ -48,6 +48,8 @@
   - [基于数组实现栈](https://github.com/sunbigshan/learnAlgorithm/blob/master/stack/StackBasedOnArray.js)
   - [基于链表实现栈](https://github.com/sunbigshan/learnAlgorithm/blob/master/stack/StackBasedOnLinkedList.js)
 4. 队列
+  - [基于数组实现队列](https://github.com/sunbigshan/learnAlgorithm/blob/master/queue/queueBasedOnArray.js) 
+  - [基于链表实现队列](https://github.com/sunbigshan/learnAlgorithm/blob/master/queue/QueueBasedOnLinkedList.js)
 5. 散列表
 6. 二叉树
 7. 堆
