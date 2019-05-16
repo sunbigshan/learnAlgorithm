@@ -62,6 +62,7 @@
 1. 递归
   - [如何理解递归？](https://github.com/sunbigshan/learnAlgorithm/issues/7)
 2. 排序
+  - [如何分析一个排序算法？](https://github.com/sunbigshan/learnAlgorithm/issues/8)
 3. 二分查找
 4. 搜索
 5. 哈希算法
