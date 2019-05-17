@@ -64,7 +64,8 @@
 2. 排序
   - [如何分析一个排序算法？](https://github.com/sunbigshan/learnAlgorithm/issues/8)
   - [冒泡、插入、选择](https://github.com/sunbigshan/learnAlgorithm/issues/9)
-  - [归并、快排](https://github.com/sunbigshan/learnAlgorithm/issues/10)
+  - [归并排序](https://github.com/sunbigshan/learnAlgorithm/issues/10)
+  - [快速排序](https://github.com/sunbigshan/learnAlgorithm/issues/11)
 3. 二分查找
 4. 搜索
 5. 哈希算法
