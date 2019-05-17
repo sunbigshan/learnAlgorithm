@@ -63,7 +63,8 @@
   - [如何理解递归？](https://github.com/sunbigshan/learnAlgorithm/issues/7)
 2. 排序
   - [如何分析一个排序算法？](https://github.com/sunbigshan/learnAlgorithm/issues/8)
-  - [冒泡排序]()
+  - [冒泡、插入、选择](https://github.com/sunbigshan/learnAlgorithm/issues/9)
+  - [归并、快排](https://github.com/sunbigshan/learnAlgorithm/issues/10)
 3. 二分查找
 4. 搜索
 5. 哈希算法
