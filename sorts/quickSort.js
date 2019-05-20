@@ -9,7 +9,7 @@ function quick(arr, left, right) {
         if(left < index - 1) {
             quick(arr, left, index - 1);
         }
-        if(index < left) {
+        if(index < right) {
             quick(arr, index, right);
         }
     }
