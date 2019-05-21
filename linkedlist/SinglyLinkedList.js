@@ -1,96 +1,84 @@
 /**
  * 1）单链表的插入、删除、查找操作；
- * 2）链表中存储的是int类型的数据；
  */
-class Node {
-    constructor (element) {
-        this.element = element;
+
+class ListNode {
+    constructor(val) {
+        this.val = val;
         this.next = null;
     }
 }
 
 class LinkedList {
-    constructor () {
-        this.head = new Node('head');
+    constructor() {
+        this.head = new ListNode('head');
     }
 
-    // 根据 value 查找节点
-    findByValue (item) {
+    // 根据 val 查找节点
+    findByValue(val) {
         let currentNode = this.head;
-        while (currentNode !== null && currentNode.element !== item) {
+        while(currentNode !== null && currentNode.val !== val) {
             currentNode = currentNode.next;
         }
-        console.log(currentNode);
         return currentNode === null ? -1 : currentNode;
     }
 
     // 根据 index 查找节点
-    findByIndex (index) {
+    findByIndex(index) {
         let currentNode = this.head;
         let pos = 0;
-        while (currentNode !== null && pos !== index) {
+        while(currentNode !== null && pos !== index) {
             currentNode = currentNode.next;
             pos++;
         }
-        console.log(currentNode);
         return currentNode === null ? -1 : currentNode;
     }
 
-    // 指定元素向后插入
-    insert (newElement, element) {
-        let currentNode = this.findByValue(element);
+    // 在指定元素后插入
+    insert(newVal, val) {
+        let currentNode = this.findByValue(val);
         if (currentNode === -1) {
             console.log('未找到插入位置')
             return false;
         }
-        const newNode = new Node(newElement);
+        const newNode = new ListNode(newVal);
         newNode.next = currentNode.next;
         currentNode.next = newNode;
     }
 
     // 查找前一个
-    findPrev (item) {
+    findPrev(val) {
         let currentNode = this.head;
-        while (currentNode.next !== null && currentNode.next.element !== item) {
+        while(currentNode.next !== null && currentNode.next.val !== val) {
             currentNode = currentNode.next;
         }
-        if (currentNode.next === null) {
-            return -1;
-        }
-        return currentNode;
+        return currentNode === null ? -1 : currentNode;
     }
 
     // 根据值删除
-    remove (item) {
-        const desNode = this.findByValue(item);
-        if (desNode === -1) {
-            console.log('未找到该元素')
-            return false;
-        }
-        const prevNode = this.findPrev(item);
-        prevNode.next = desNode.next;
+    remove (val) {
+        let prevNode = this.findPrev(val);
+        prevNode.next = prevNode.next.next;
     }
 
     // 遍历显示所有节点
     display () {
         let currentNode = this.head;
         while (currentNode !== null) {
-            console.log(currentNode.element)
+            console.log(currentNode.val)
             currentNode = currentNode.next;
         }
     }
 }
 
-// Test
 const LList = new LinkedList()
 LList.insert('chen', 'head')
 LList.insert('curry', 'chen')
 LList.insert('sang', 'head')
 LList.insert('zhao', 'head')
-console.log('-------------remove item------------')
-LList.remove('curry')
-LList.display()
-console.log('-------------find by item------------')
-LList.findByValue('chen')
-console.log('-------------find by index------------')
-LList.findByIndex(2)
+console.log('-------------show item------------')
+LList.display();
+console.log('-------------remove item sang------------')
+LList.remove('sang');
+console.log('-------------show item------------')
+LList.display();
