@@ -38,7 +38,7 @@
   - [复杂度分析（中）](https://github.com/sunbigshan/learnAlgorithm/issues/2)
   - [复杂度分析（下）](https://github.com/sunbigshan/learnAlgorithm/issues/3)
 
-**10个数据结构**：
+**数据结构**：
 
 1. 数组
   - [为什么很多编程语言中数组都从0开始编号？](https://github.com/sunbigshan/learnAlgorithm/issues/4)
@@ -57,12 +57,9 @@
   - [基于对象实现队列](https://github.com/sunbigshan/learnAlgorithm/blob/master/queue/QueueBasedOnObject.js) 
   - [基于链表实现队列](https://github.com/sunbigshan/learnAlgorithm/blob/master/queue/QueueBasedOnLinkedList.js)
   - [基于对象实现双端队列](https://github.com/sunbigshan/learnAlgorithm/blob/master/queue/DueueBasedOnObject.js) 
-5. 散列表
-6. 二叉树
-7. 堆
-8. 跳表
-9. 图
-10. Trie 树
+5. 集合
+  - [模拟实现ES6的Set数据结构]()
+
 
 **10个算法**：
 
