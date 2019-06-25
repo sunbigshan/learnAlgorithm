@@ -58,7 +58,7 @@
   - [基于链表实现队列](https://github.com/sunbigshan/learnAlgorithm/blob/master/queue/QueueBasedOnLinkedList.js)
   - [基于对象实现双端队列](https://github.com/sunbigshan/learnAlgorithm/blob/master/queue/DueueBasedOnObject.js) 
 5. 集合
-  - [模拟实现ES6的Set数据结构]()
+  - [模拟实现ES6的Set数据结构](https://github.com/sunbigshan/learnAlgorithm/blob/master/set/Set.js)
 
 
 **10个算法**：
