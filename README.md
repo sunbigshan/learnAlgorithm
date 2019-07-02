@@ -59,6 +59,8 @@
   - [基于对象实现双端队列](https://github.com/sunbigshan/learnAlgorithm/blob/master/queue/DueueBasedOnObject.js) 
 5. 集合
   - [模拟实现ES6的Set数据结构](https://github.com/sunbigshan/learnAlgorithm/blob/master/set/Set.js)
+6. 树
+  - [二叉搜索树的实现]()
 
 
 **10个算法**：
