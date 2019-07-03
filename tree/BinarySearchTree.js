@@ -11,12 +11,13 @@
  */
 function Node(key) {
   this.key = key;
-  this.left = left;
-  this.right = right;
+  this.left = null;
+  this.right = null;
 }
 
 class BinarySearchTree {
   constructor() {
+    // 初始化根节点
     this.root = null;
   }
   insert(key) {
@@ -43,4 +44,109 @@ class BinarySearchTree {
       }
     }
   }
+  search(key) {
+    return this.searchNode(this.root, key);
+  }
+  searchNode(node, key) {
+    if(node === null) {
+      return false;
+    }
+    if(key < node.key) { // 遍历左侧子节点
+      return this.searchNode(node.left, key);
+    }else if(key > node.key) { // 遍历右侧子节点
+      return this.searchNode(node.right, key);
+    }else{
+      return true;
+    }
+  }
+  // 中序遍历
+  inOrderTraverse(callback) {
+     this.inOrderTraverseNode(this.root, callback);
+  }
+  inOrderTraverseNode(node, callback) {
+    if(node !== null) {
+      this.inOrderTraverseNode(node.left, callback);
+      callback(node.key);
+      this.inOrderTraverseNode(node.right, callback);
+    }
+  }
+  // 先序遍历
+  preOrderTraverse(callback) {
+    this.preOrderTraverseNode(this.root, callback);
+  }
+  preOrderTraverseNode(node, callback) {
+    if(node !== null) {
+      callback(node.key);
+      this.preOrderTraverseNode(node.left, callback);
+      this.preOrderTraverseNode(node.right, callback);
+    }
+  }
+  // 后续遍历
+  postOrderTraverse(callback) {
+    this.postOrderTraverseNode(this.root, callback);
+  }
+  postOrderTraverseNode(node, callback) {
+    if(node !== null) {
+      this.postOrderTraverseNode(node.left, callback);
+      this.postOrderTraverseNode(node.right, callback);
+      callback(node.key);
+    }
+  }
+  // 获取最小值
+  min() {
+    return this.minNode(this.root);
+  }
+  minNode(node) {
+    let current = node;
+    while(current.left !== null) {
+      current = current.left;
+    }
+    return current.key;
+  }
+  // 获取最大值
+  max() {
+    return this.maxNode(this.root);
+  }
+  maxNode(node) {
+    let current = node;
+    while(current.right !== null) {
+      current = current.right;
+    }
+    return current.key;
+  }
 }
+
+const tree = new BinarySearchTree();
+
+tree.insert(11);
+tree.insert(7);
+tree.insert(15);
+tree.insert(5);
+tree.insert(3);
+tree.insert(9);
+tree.insert(8);
+tree.insert(10);
+tree.insert(13);
+tree.insert(12);
+tree.insert(14);
+tree.insert(20);
+tree.insert(18);
+tree.insert(25);
+
+console.log('-------------搜索6------------')
+console.log(tree.search(6))
+console.log('-------------插入6------------')
+tree.insert(6);
+console.log('插入成功');
+console.log('-------------再次搜索6------------')
+console.log(tree.search(6))
+console.log('-------------最小值------------')
+console.log(tree.min());
+console.log('-------------最大值------------')
+console.log(tree.max());
+console.log('-------------中序遍历------------')
+tree.inOrderTraverse(val => console.log(val));
+console.log('-------------先序遍历------------')
+tree.preOrderTraverse(val => console.log(val));
+console.log('-------------后序遍历------------')
+tree.postOrderTraverse(val => console.log(val));
