@@ -60,7 +60,7 @@
 5. 集合
   - [模拟实现ES6的Set数据结构](https://github.com/sunbigshan/learnAlgorithm/blob/master/set/Set.js)
 6. 树
-  - [二叉搜索树的实现]()
+  - [二叉搜索树的实现](https://github.com/sunbigshan/learnAlgorithm/blob/master/tree/BinarySearchTree.js)
 
 
 **10个算法**：
